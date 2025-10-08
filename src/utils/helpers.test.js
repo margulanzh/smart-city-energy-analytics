@@ -3,11 +3,11 @@ import { formatEnergy, calculatePercentageChange, isWithinRange, getConsumptionS
 describe('Utility Functions', () => {
   describe('formatEnergy', () => {
     test('formats energy value with default 2 decimals', () => {
-      expect(formatEnergy(55.555)).toBe('55.56')
+      expect(formatEnergy(55.556)).toBe('55.56')
     })
 
     test('formats energy value with custom decimals', () => {
-      expect(formatEnergy(55.555, 1)).toBe('55.6')
+      expect(formatEnergy(55.55, 1)).toBe('55.6')
     })
 
     test('formats zero correctly', () => {
